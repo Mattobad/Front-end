@@ -1,0 +1,402 @@
+/* ================================================
+		DEFAULT VALUES:
+		FONT FAMILY:  Roboto Condensed
+
+		greeenish blue color: #34c6d3 (Buttons, Icons, links, lines & background);
+		steel Gray: #41464b; (Headings)
+		Blue Bayoux:r # 64707b (paragraphs);
+		White: #fff (Text with black background);
+		back: #000;
+
+==================================================*/
+
+/* General CSS*/
+
+html,body {
+		height: 100%;
+}
+
+body {
+	font-family: "Roboto Condensed", sans-serif;
+}
+
+p {
+	color:#64707b;
+	font-size: 16px;
+	font-weight: 300;
+}
+
+h3 {
+	color: #41464b;
+	text-transform: uppercase;
+
+}
+
+/*================================================
+					Home
+==================================================*/
+
+#home {
+	height: 100%;
+}
+
+#home-cover {
+	height: 100%;
+	background-image: url("../img/bg-home.jpg");
+
+}
+
+/*.btn {
+	font-family: "Roboto Condensed", sans-serif;
+	background-color : #D7E6F6}*/
+/* CSS - Just for Grid Examples*/
+/*
+.col-1 {background-color: red;}
+.col-2 {background-color: green;}
+.col-3 {background-color: blue;}
+.col-4 {background-color: yellow;}*/
+
+
+#home-content-box {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+#home-content-box-inner {
+	display: table-cell;
+	vertical-align: middle;
+/*	text-align: center;
+*/}
+
+#home-heading h3 {
+	color: #fff;
+	font-size: 55px;
+	font-weight: 700;
+	margin: 20px 0 20px 0;
+	text-transform: uppercase;
+}
+
+/*================================================
+					PARALLAX (Generic)
+==================================================*/
+
+.bg-parallax {
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}
+/*================================================
+				Button
+==================================================*/
+
+.btn-general {
+	border-color: #fff;
+	border-width: 2px;
+	border-radius: 0;
+	padding: 12px 26px 12px 26px;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.btn-white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.btn-white:hover, 
+.btn-white:focus {
+	background-color: #fff;
+	color: #41464b;
+}
+
+.btn-blue {
+	border-color: #34c6d3;
+	color: #34c6d3;
+}
+
+.btn-blue:hover, 
+.btn-blue:focus {
+	background-color: #34c6d3;
+	color: #fff;
+}
+
+/*================================================
+					Animation
+==================================================*/
+
+#home-cover,
+#home-heading,
+#home-btn {
+		animation-duration: .5s;
+	}
+
+#home-cover {
+	animation-delay: .1s;
+}
+
+
+#home-heading {
+	animation-delay: .5s;
+}
+
+#home-btn {
+	animation-delay: 1s;
+}
+
+
+/*================================================
+					Content (Generic)
+==================================================*/
+
+.content-box {
+	padding: 60px 0 60px 0;
+}
+
+.content-title h3 {
+	font-size: 30px;
+	font-weight: 700;
+	text-align: center;
+	margin: 0 0 30px 0;
+}
+
+.content-title-underline {
+	width: 30px;
+	height: 3px;
+	background-color: #34c6d3;
+	margin: 0 auto 30px auto;
+}
+
+.content-title-white h3 {
+	color: #fff;
+}
+
+/*================================================
+					Services
+==================================================*/
+
+.service-item {
+	padding: 20px 0 20px 0;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+.service-item-icon {
+	color: #34c6d3;
+	float: left;
+	padding: 15px;
+	margin-right: 25px;
+	height: 75px;
+	width: 75px; 
+	text-align: center;
+}
+
+.service-item:hover .service-item-icon i {
+	color: #fff;
+	background-color: #34c6d3;
+	height: 80px;
+	width: 80px; 
+	padding: 10px 10px 10px 10px;
+}
+
+
+.service-item-title h3 {
+	font-size: 20px;
+	font-weight: 400;
+	margin: 0 0 10px 0;
+}
+
+.service-item-desc p {
+	margin: 0;
+	padding-left: 85px;
+}
+
+
+
+/*================================================
+					About
+==================================================*/
+
+#about-bg-diagonal{
+	    width: 60%;
+    height: 700px;
+    float: right;
+    background-image: url(../img/bg-about.jpg);
+    border-top: 700px solid transparent;
+        border-left: 200px solid #fff;
+
+}
+
+#about-content-box {
+	float: left;
+	height: 700px;
+}
+
+#about-content-box-outer {
+	width: 100%;
+	height: 100%;
+	display: table;
+}
+
+#about-content-box-inner {
+	display: table-cell;
+	vertical-align: middle;
+}
+
+#about .content-title h3 {
+	text-align: left;
+}
+
+#about .content-title .content-title-underline {
+	margin: 0 0 30px 0;
+}
+
+#about-desc p {
+	margin-bottom: 30px;
+}
+
+/*================================================
+					Work
+==================================================*/
+
+.row.no-gutters [class*=col-] {
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.img-wrapper{
+	overflow: hidden;
+}
+
+.img-wrapper img {
+	transform: trasform .5s ease;
+}
+.img-wrapper img:hover {
+	transform: scale(1.5);
+	cursor: zoom-in;
+}
+
+/*================================================
+					TEAM
+==============================================*/
+
+.team-member {
+	margin: 0 15px;
+}
+
+.team-member-info {
+	padding:10px 0 30px 0;
+}
+
+h4.team-member-name {
+	font-size: 22px;
+	font-weight: 700;
+	letter-spacing: 1px;
+
+}
+
+h4.team-member-designation {
+	color: #34c6d3;
+	font-size: 15px;
+	font-weight: 700;
+	font-style: italic;
+	letter-spacing: 1px;
+	margin-top: 5px;
+
+}
+
+/*================================================
+					SOCIAL
+==============================================*/
+
+.social-list {
+	padding-left: 0;
+}
+
+.social-list li {
+	list-style: none;
+	display: inline-block;
+	width: 32px;
+	height: 32px;
+	margin-top: 10px;
+	margin-right: 6px;
+}
+
+.social-icon i {
+	font-size: 17px;
+}
+
+.icon-gray i {
+	color: #64707b;
+}
+
+.social-icon i:hover {
+	color: #34c6d3;
+}
+
+/*================================================
+					TESTIMONIALS
+==============================================*/
+
+#testimonials-cover {
+	background-image: url("../img/bg-testimonials.jpg");
+}
+
+#testimonials .content-box {
+	background-color: rgb(0,0,0,0.1);
+}
+
+#customer-testimonials {
+	padding: 50px 0;
+}
+
+.testimonial img {
+	max-width: 120px;
+	margin: 0 auto 0 auto;
+}
+
+.testimonial blockquote {
+	border: 0;
+	font-family: Georgia, sans-serif;
+	font-style: italic;
+	color: #fff;
+	padding: 6px 150px;
+	position: relative;
+}
+
+.testimonial blockquote p {
+	color: #fff;
+}
+
+.testimonial blockquote::before,
+.testimonial blockquote::after {
+	font-size: 50px;
+	font-style: normal;
+	line-height: 1;
+	width: 30px;
+	height: 30px;
+	position: absolute;
+}
+
+.testimonial blockquote::before {
+	content: "\201C";
+	top: 0;
+	left: 300px;
+}
+
+.testimonial blockquote::after {
+	content: "\201D";
+	bottom: 0;
+	right: 300px;
+}
+
+.testimonial-author p {
+	color: #fff;
+	font-size: 17px;
+}
+
+.testimonial-author p  strong{
+	display: block;
+}
